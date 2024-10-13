@@ -11,7 +11,7 @@ function checkAnswer() {
 
     // Check if an answer is selected by the user
     if (userAnswer) {
-        // Compare the user's answer to the correct answer
+        // Compare the user's answer value to the correct answer
         if (userAnswer.value === correctAnswer) {
             // If the answer is correct, show success message
             feedback.textContent = "Correct! Well done.";
