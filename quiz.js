@@ -9,18 +9,18 @@ function checkAnswer() {
     // Select the feedback element where we'll display the result
     const feedback = document.getElementById('feedback');
     
-    // Check if an answer is selected by the user
+    // Check if the user selected an answer
     if (userAnswer) {
-        // Compare the user's answer value to the correct answer
+        // Compare user's answer with correct answer
         if (userAnswer.value === correctAnswer) {
-            // If the answer is correct, show success message
+            // If correct, display success feedback
             feedback.textContent = "Correct! Well done.";
         } else {
-            // If the answer is incorrect, show error message
+            // If incorrect, display error feedback
             feedback.textContent = "That's incorrect. Try again!";
         }
     } else {
-        // If no answer is selected, prompt the user to choose an option
+        // If no answer is selected, ask the user to select an answer
         feedback.textContent = "Please select an answer!";
     }
 }
